@@ -1,26 +1,29 @@
 # Setup
-Create the following directory structure into your project repository : 
-|- docker
-|- project
 
-Go into docker repository and clone this repository :
+Create your empty repository :
 ```
-cd docker
-git clone git@github.com:tiatony/docker.git
+mkdir myrepo
+```
+
+Clone this repository :
+```
+cd myrepo
+git clone git@github.com:tiatony/docker.git docker
+
 ```
 launch Docker engine on your computer, then execute : 
 ```
+cd docker
 docker-compose up -d 
 ```
-it may take some time to process... 
 
 Create your Symfony project from the www container by executing : 
 ```
-cd ..
+cd ../myrepo
 docker exec www_kaamelott composer create-project symfony/website-skeleton project
 ```
 
-Access : 
+# Access 
 - web server : http://localhost:8741
 - Maildev : http://localhost:8081
 - phpmyadmin : http://localhost:8080 (root / no password)
