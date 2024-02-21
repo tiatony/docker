@@ -6,7 +6,7 @@ Create the following directory structure into your project repository :
 Go into docker repository and clone this repository :
 ```
 cd docker
-git clone *******
+git clone git@github.com:tiatony/docker.git
 ```
 launch Docker engine on your computer, then execute : 
 ```
