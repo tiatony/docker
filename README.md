@@ -22,6 +22,7 @@ Create your Symfony project from the www container by executing :
 cd ../myrepo
 docker exec www_kaamelott composer create-project symfony/website-skeleton project
 ```
+(cf. https://symfony.com/doc/current/setup.html#creating-symfony-applications )
 
 # Access 
 - web server : http://localhost:8741
